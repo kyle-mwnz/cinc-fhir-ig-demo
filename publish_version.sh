@@ -15,7 +15,7 @@ if [ $(grep -c "$CURRENT_VERSION" input/pagecontent/history.md) -eq 0 ]
 then
   # add an entry to the history.md log file with the new version
   echo Adding $CURRENT_VERSION to history.md
-  sed -i "10i - [$CURRENT_VERSION](https://build.fhir.org/ig/kyle-mwnz/cinc-fhir-ig-test/branches/$CURRENT_VERSION_URL_FRIENDLY)" input/pagecontent/history.md
+  sed -i "10i - [$CURRENT_VERSION](./branches/$CURRENT_VERSION_URL_FRIENDLY)" input/pagecontent/history.md
 
   # add the history.md update to git master branch, so the entry is stored
   git add input/pagecontent/history.md
