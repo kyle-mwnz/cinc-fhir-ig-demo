@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: cinc.fhir.ig
-canonical: https://build.fhir.org/ig/tewhatuora/cinc-fhir-ig
+canonical: https://build.fhir.org/ig/kyle-mwnz/cinc-fhir-ig-test
 name: CINC_FHIR_IG
 title: Care In The Community FHIR API
 description: Care In The Community FHIR API
