@@ -1,9 +1,13 @@
 name: Publish Implementation Guide version history
-push:
-  branches:
-    - master
+
+on:
+  push:
+    branches:
+      - master
+
 permissions:
   contents: write
+
 jobs:
   update_ig_version:
     if: github.event.pull_request.merged == true
