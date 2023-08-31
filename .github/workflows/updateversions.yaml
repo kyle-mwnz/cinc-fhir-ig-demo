@@ -16,3 +16,11 @@ jobs:
         # install yq yaml parser
         sudo wget --quiet https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq
         sh publish_version.sh
+
+  update_ig_version:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Always run job
+      run: |
+        # https://github.com/orgs/community/discussions/25146
+        echo This job is used to prevent the workflow status from showing as failed when there is no job to run.
