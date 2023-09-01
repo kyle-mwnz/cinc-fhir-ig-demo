@@ -9,5 +9,3 @@ To view previous versions of the Implementation Guide or it's artifacts, please 
 
 - [0.2.4](./branches/024)
 - [0.2.3](./branches/023)
- 
- 
