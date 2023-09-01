@@ -23,7 +23,7 @@ then
   git add input/pagecontent/history.md
   git commit -m "[no ci] Updated IG history.md"
   git push --set-upstream origin update/$CURRENT_VERSION_URL_FRIENDLY
-  gh pr create --title "Updated IG history" --body "Updated IG history"
+  gh pr create --head update/$CURRENT_VERSION_URL_FRIENDLY --base master --title "Updated IG history" --body "Updated IG history"
 fi
 
 # create a new release branch for the current version and push it
