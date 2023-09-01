@@ -20,7 +20,7 @@ then
   # add the history.md update to git master branch, so the entry is stored
   git add input/pagecontent/history.md
   git commit -m "[no ci] Updated IG history.md"
-  gh pr create --title "Updated IG history"
+  gh pr create --title "Updated IG history" --body "Updated IG history"
 fi
 
 # create a new release branch for the current version and push it
