@@ -19,7 +19,7 @@ then
 
   # add the history.md update to git master branch, so the entry is stored
   git add input/pagecontent/history.md
-  git commit -m "Updated IG history.md"
+  git commit -m "[no ci] Updated IG history.md"
   git push origin master
 fi
 
