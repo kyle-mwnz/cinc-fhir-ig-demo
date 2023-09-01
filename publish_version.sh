@@ -17,7 +17,9 @@ then
   echo Adding $CURRENT_VERSION to history.md
   sed -i "10i - [$CURRENT_VERSION](./branches/$CURRENT_VERSION_URL_FRIENDLY)" input/pagecontent/history.md
 
-  # add the history.md update to git master branch, so the entry is stored
+  # add the history.md update to a git branch, so the entry is stored
+  git push origin --delete update/$CURRENT_VERSION_URL_FRIENDLY || true
+  git checkout -b update/$CURRENT_VERSION_URL_FRIENDLY
   git add input/pagecontent/history.md
   git commit -m "[no ci] Updated IG history.md"
   gh pr create --title "Updated IG history" --body "Updated IG history"
